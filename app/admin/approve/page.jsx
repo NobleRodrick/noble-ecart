@@ -29,7 +29,7 @@ export default function AdminApprove() {
   const handleApprove = async ({ storeId, status }) => {
     try {
       const token = await getToken();
-      const { data } = axios.post(
+      const { data } = await axios.post(
         "/api/admin/approve-store",
         { storeId, status },
         {
