@@ -7,8 +7,8 @@ import { ClerkProvider } from "@clerk/nextjs";
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
 export const metadata = {
-  title: "Noble Ecart - AIpowered EcomShop",
-  description: "Noble Ecart - AIpowered multivendor EcomShop, Shop smarter",
+  title: "Noble Ecart - AIpowered multivendor EcomShop",
+  description: "AIpowered multivendor EcomShop, Shop smarter. sell faster.",
 };
 
 export default function RootLayout({ children }) {
