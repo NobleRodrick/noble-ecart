@@ -22,7 +22,7 @@ export async function POST(request) {
 
             const { orderIds, userId, appId } = session.data[0].metadata;
 
-            if (appId !== "nonchalant-cart") {
+            if (appId !== "noble-ecart") {
                 return NextResponse.json({ received: true, message: "Invalid app id" }); // The app id can be changed
             }
 

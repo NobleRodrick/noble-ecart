@@ -130,7 +130,7 @@ export async function POST(request) {
         line_items: [
           {
             price_data: {
-              currency: "usd", // can change currency here
+              currency: "xaf", // can change currency here
               product_data: {
                 name: "Order",
               },
@@ -146,7 +146,7 @@ export async function POST(request) {
         metadata: {
           orderIds: orderIds.join(","),
           userId,
-          appId: "gocart",
+          appId: "noble-ecart", // The app id can be changed
         },
       });
       return NextResponse.json({ session });
